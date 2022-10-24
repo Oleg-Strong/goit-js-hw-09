@@ -23,6 +23,4 @@ function colorSwitcherOff() {
   clearInterval(intervalId);
   startBtn.removeAttribute('disabled');
   stopBtn.setAttribute('disabled', 'true');
-
-  console.log(intervalId);
 }
