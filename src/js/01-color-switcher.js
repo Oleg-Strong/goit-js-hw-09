@@ -11,15 +11,18 @@ function getRandomHexColor() {
 }
 
 function colorSwitcherOn() {
-  startBtn.setAttribute('disabled', 'true');
-  stopBtn.removeAttribute('disabled');
   intervalId = setInterval(() => {
     document.body.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
+
+  startBtn.setAttribute('disabled', 'true');
+  stopBtn.removeAttribute('disabled');
 }
 
 function colorSwitcherOff() {
+  clearInterval(intervalId);
   startBtn.removeAttribute('disabled');
   stopBtn.setAttribute('disabled', 'true');
-  clearInterval(intervalId);
+
+  console.log(intervalId);
 }
