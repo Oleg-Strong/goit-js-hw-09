@@ -77,10 +77,7 @@ const renderTimer = value => {
   if (days === '00' && hours === '00' && minutes === '00' && seconds === '00') {
     clearInterval(intervalId);
   }
-  console.log(days);
-  console.log(hours);
-  console.log(minutes);
-  console.log(seconds);
+
   daysEl.innerHTML = days;
   hoursEl.innerHTML = hours;
   minutesEl.innerHTML = minutes;

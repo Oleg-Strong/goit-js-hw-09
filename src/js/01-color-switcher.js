@@ -9,7 +9,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-intervalId = null;
+let intervalId = null;
 function colorSwitcherOn() {
   startBtn.setAttribute('disabled', 'true');
   stopBtn.removeAttribute('disabled');
